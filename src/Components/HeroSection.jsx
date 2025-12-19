@@ -52,7 +52,7 @@ function HeroSection() {
               href="/programme"
               className="bg-orange-500 text-white px-8 py-4 rounded-lg font-bold hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg flex items-center justify-center"
             >
-              Voir le Programme
+              Voir le Programme de l'année
             </a>
             
             {/* MODIFICATION ICI : Remplacez <a> par <button> */}

@@ -1,4 +1,4 @@
-import { Bell, Calendar, Users, Heart, School } from "lucide-react"
+import { Bell, Calendar, Users, Heart, School , PartyPopper } from "lucide-react"
 import { Link } from "react-router-dom"
 
 function AnnouncesSection() {
@@ -11,17 +11,17 @@ function AnnouncesSection() {
       color: "bg-blue-500",
     },
     {
-      icon: Users,
-      title: "Pèlerinage décanal ",
-      description: "Retraite de 3 jours pour approfondir notre foi ensemble",
-      date: " Mars 2026",
+      icon: PartyPopper,
+      title: "Maracana de fin d’année ",
+      description: "Une journée sportive en frère et soeur en christ",
+      date: " Dimanche 28 Décembre 2025",
       color: "bg-green-500",
     },
     {
       icon: School,
-      title: "Formation et messe des jeunes  ",
-      description: "Visite aux malades et distribution de vivres",
-      date: "Dimanche 19 Avril 2026",
+      title: "Pèlerinage décanal",
+      description: "",
+      date: " 08 Mars 2026",
       color: "bg-pink-500",
     },
   ]
@@ -37,7 +37,7 @@ function AnnouncesSection() {
               <span className="font-semibold">Annonces Importantes</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Activités à venir</h2>
-            <p className="text-xl text-gray-600">Découvrez les prochains événements de notre communauté</p>
+            <p className="text-xl text-gray-600">Découvrez les prochaines activités jeune de notre paroisse.</p>
           </div>
 
           {/* Grille d'annonces */}

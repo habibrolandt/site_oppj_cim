@@ -18,8 +18,8 @@ function RejoindreSection() {
             </div>
 
             <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
-              Pour recevoir toutes les informations sur nos activités et événements, intégrez notre groupe WhatsApp en
-              cliquant sur le bouton ci-dessous ou en scannant le QR code.
+              Pour recevoir toutes les informations sur les activités et événements organisés par<strong>l'OPPJ</strong>de ta paroisse, intégrez notre groupe WhatsApp en
+              cliquant sur le bouton ci-dessous.
             </p>
 
             {/* Flip Card Container */}

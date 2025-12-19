@@ -15,6 +15,7 @@ import merveille from "../assets/Images/merveille.jpg"
 import alexA from "../assets/Images/alexA.jpg"
 import innocent from "../assets/Images/innocent.jpg"
 import yedidia from "../assets/Images/yedidia.jpg"
+import broh from "../assets/Images/bro.jpg"
 
 function Bureau() {
   const [expandedMembre, setExpandedMembre] = useState(null)
@@ -131,10 +132,10 @@ function Bureau() {
           phone: "+225 07 07 80 01 06",
         },
         {
-          nom: "BRO",
+          nom: "BROH",
           prenom: "LARISSA",
           poste: "Secrétaire à l’organisation Adjoint 3",
-          photo: null,
+          photo: broh,
           phone: "+225 07 77 67 02 67",
         },
       ],
@@ -179,7 +180,7 @@ function Bureau() {
       prenom: "Brou Jean-Kader",
       poste: "Chargé de la Santé du bureau de l'OPPJ",
       photo: kader,
-      phone: "",
+      phone: "+225 07 07 80 01 06",
       adjoints: [],
     },
     {
