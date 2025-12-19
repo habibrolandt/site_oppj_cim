@@ -32,7 +32,7 @@ function Programme() {
     {
       id: 3,
       title: "Pèlerinage décanal ",
-      date: "2024-03-8",
+      date: "2026-03-8",
       month: "Mars",
       monthValue: "Mars",
       description: "",
@@ -42,7 +42,7 @@ function Programme() {
     {
       id: 4,
       title: "Formation et messe des jeunes ",
-      date: "2024-04-19",
+      date: "2026-04-19",
       month: "Avril",
       monthValue: "Avril",
       description: "",
@@ -52,7 +52,7 @@ function Programme() {
         {
       id: 4,
       title: "Pèlerinage paroissial",
-      date: "2024-05-25",
+      date: "2026-05-25",
       month: "Mai",
       monthValue: "Mai",
       description: "",
@@ -72,7 +72,7 @@ function Programme() {
     {
       id: 6,
       title: "Semaine des jeunes",
-      date: "2024-06-14",
+      date: "2026-06-14",
       month: "Juin",
       monthValue: "juin",
       description: "",
