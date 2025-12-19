@@ -22,32 +22,7 @@ function Footer() {
             </blockquote>
           </div>
 
-          {/* Section Liens Rapides */}
-          <div className="animate-fadeIn delay-200">
-            <h3 className="text-xl font-bold mb-4">Liens Rapides</h3>
-            <ul className="space-y-2">
-              <li>
-                <a href="/" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Accueil
-                </a>
-              </li>
-              <li>
-                <a href="/programme" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Programme Annuel
-                </a>
-              </li>
-              <li>
-                <a href="/bureau" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Membres du Bureau
-                </a>
-              </li>
-              <li>
-                <a href="/activites" className="text-gray-300 hover:text-green-400 transition-colors">
-                  Nos Activités
-                </a>
-              </li>
-            </ul>
-          </div>
+         
 
           {/* Section Contact */}
           <div className="animate-fadeIn delay-300">

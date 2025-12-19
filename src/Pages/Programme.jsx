@@ -2,6 +2,7 @@
 
 import { Calendar, Plus, Eye } from "lucide-react"
 import { useState } from "react"
+import affiche1 from "../assets/Images/MesseRentrée.png"
 
 function Programme() {
   const [selectedMonth, setSelectedMonth] = useState("all")
@@ -10,61 +11,71 @@ function Programme() {
   const programmes = [
     {
       id: 1,
-      title: "Messe d'ouverture de l'année",
-      date: "2024-01-14",
-      month: "Janvier",
-      monthValue: "janvier",
+      title: "Messe de rentrée des jeunes",
+      date: "2025-12-21",
+      month: "Décembre",
+      monthValue: "Décembre",
       description: "Célébration eucharistique pour commencer l'année dans la foi et la communion fraternelle.",
-      time: "9h00",
-      affiches: ["/affiche-messe-ouverture.jpg"],
+      time: "10h30",
+      affiches: [affiche1],
     },
     {
       id: 2,
-      title: "Retraite de Carême",
-      date: "2024-02-17",
-      month: "Février",
-      monthValue: "fevrier",
-      description: "Trois jours de prière, méditation et partage pour se préparer à Pâques.",
-      time: "15h00",
+      title: "Maracana de fin d’année",
+      date: "2025-12-28",
+      month: "Décembre",
+      monthValue: "Décembre",
+      description: "",
+      time: "08h00",
       affiches: ["/affiche-retraite-careme.jpg"],
     },
     {
       id: 3,
-      title: "Action Caritative",
-      date: "2024-03-22",
+      title: "Pèlerinage décanal ",
+      date: "2024-03-8",
       month: "Mars",
-      monthValue: "mars",
-      description: "Visite aux malades et aux personnes âgées, distribution de vivres.",
-      time: "10h00",
-      affiches: ["/affiche-action-caritative.jpg"],
+      monthValue: "Mars",
+      description: "",
+      time: "08h00",
+      affiches: [],
     },
     {
       id: 4,
-      title: "Veillée Pascale",
-      date: "2024-04-06",
+      title: "Formation et messe des jeunes ",
+      date: "2024-04-19",
       month: "Avril",
-      monthValue: "avril",
-      description: "Célébration de la Résurrection du Christ avec toute la communauté.",
-      time: "20h00",
+      monthValue: "Avril",
+      description: "",
+      time: "08h00",
+      affiches: ["/affiche-veillee-pascale.jpg"],
+    },
+        {
+      id: 4,
+      title: "Pèlerinage paroissial",
+      date: "2024-05-25",
+      month: "Mai",
+      monthValue: "Mai",
+      description: "",
+      time: "08h00",
       affiches: ["/affiche-veillee-pascale.jpg"],
     },
     {
       id: 5,
-      title: "Pèlerinage Marial",
-      date: "2024-05-12",
-      month: "Mai",
-      monthValue: "mai",
-      description: "Pèlerinage à Notre-Dame pour honorer la Vierge Marie.",
+      title: "Encadrement pour les examens ",
+      date: "",
+      month: "Juin",
+      monthValue: "Juin",
+      description: ".",
       time: "7h00",
       affiches: ["/affiche-pelerinage-marial.jpg"],
     },
     {
       id: 6,
-      title: "Formation Biblique",
-      date: "2024-06-08",
+      title: "Semaine des jeunes",
+      date: "2024-06-14",
       month: "Juin",
       monthValue: "juin",
-      description: "Session de formation sur l'évangile de Saint Jean.",
+      description: "",
       time: "14h00",
       affiches: ["/affiche-formation-biblique.jpg"],
     },
@@ -113,7 +124,7 @@ function Programme() {
           >
             Tous
           </button>
-          {["janvier", "fevrier", "mars", "avril", "mai", "juin"].map((month) => (
+          {["Décembre", "Mars", "Avril", "Mai", "Juin"].map((month) => (
             <button
               key={month}
               onClick={() => setSelectedMonth(month)}
@@ -149,7 +160,7 @@ function Programme() {
                   </button>
 
                   {/* En-tête de carte */}
-                  <div className="bg-gradient-to-r from-blue-600 to-orange-500 text-white p-6">
+                  <div className="bg-gradient-to-r from-blue-600  text-white p-6">
                     <div className="flex items-center justify-between mb-2">
                       <span className="bg-white text-blue-700 px-3 py-1 rounded-full text-sm font-bold">
                         {programme.month}
@@ -199,7 +210,7 @@ function Programme() {
                       <img
                         key={idx}
                         src={affiche || "/placeholder.svg"}
-                        alt={`Affiche ${programme.title} ${idx + 1}`}
+                        alt={`Aucune affiche disponible pour l'instant`}
                         className="w-full rounded-lg shadow-md"
                       />
                     ))}

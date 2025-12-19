@@ -19,7 +19,7 @@ function App() {
             <Route path="/activites" element={<Activites />} />
           </Routes>
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   )

@@ -2,6 +2,7 @@
 
 import { MessageCircle } from "lucide-react"
 import { useState } from "react"
+// import qrCodeWhatsapp from "../assets/Images/a"
 
 function RejoindreSection() {
   const [showQR, setShowQR] = useState(false)
@@ -24,12 +25,12 @@ function RejoindreSection() {
             {/* Flip Card Container */}
             <div className="max-w-md mx-auto">
               <div className={`flip-card ${showQR ? "flipped" : ""}`}>
-                <div className="flip-card-inner" style={{ minHeight: "320px" }}>
+                <div className="flip-card-inner" style={{ minHeight: "70px" }}>
                   {/* Front - Button */}
                   <div className="flip-card-front">
                     <div className="flex flex-col gap-4 items-center justify-center h-full">
                       <a
-                        href="https://chat.whatsapp.com/votre-lien-groupe"
+                        href="https://chat.whatsapp.com/GkCdKguBH1tHdQ0nhyWl57?mode=hqrt2"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center bg-green-600 text-white px-8 py-4 rounded-lg font-bold hover:bg-green-700 transition-all duration-300 transform hover:scale-105 shadow-lg"
@@ -38,20 +39,17 @@ function RejoindreSection() {
                         Rejoindre le Groupe
                       </a>
 
-                      <button
-                        onClick={() => setShowQR(true)}
-                        className="text-blue-600 underline hover:text-blue-800 transition-colors duration-300 font-semibold"
-                      >
-                        Ou scannez le QR Code
-                      </button>
+                      
+                    
+                    
                     </div>
                   </div>
 
                   {/* Back - QR Code */}
-                  <div className="flip-card-back">
+                  {/* <div className="flip-card-back">
                     <div className="bg-gradient-to-br from-blue-50 to-green-50 p-6 rounded-xl border-4 border-green-500 h-full flex flex-col items-center justify-center">
                       <img
-                        src="/qr-code-whatsapp.jpg"
+                        src={qrCodeWhatsapp || "/placeholder.svg"}
                         alt="QR Code WhatsApp"
                         className="w-48 h-48 mb-4 rounded-lg shadow-lg"
                       />
@@ -63,7 +61,7 @@ function RejoindreSection() {
                         Retour
                       </button>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>

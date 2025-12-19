@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Link, useLocation } from "react-router-dom"
 import { Menu, X } from "lucide-react"
+import logoOppj from "../assets/Images/logo1.jpg"
 
 function Header() {
   const location = useLocation()
@@ -19,12 +20,12 @@ function Header() {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img
-              src="/images/logo-20oppj-20cim-20.jpg"
+              src={logoOppj || "/placeholder.svg"}
               alt="Logo OPPJ"
               className="w-12 h-12 md:w-14 md:h-14 rounded-full object-cover shadow-md"
             />
             <div>
-              <h1 className="text-lg md:text-xl font-bold">OPPJ</h1>
+              <h1 className="text-lg md:text-xl font-bold">OPPJ-CIM</h1>
               <p className="text-xs text-blue-100 hidden md:block">Office Paroissial des Jeunes</p>
             </div>
           </div>
@@ -52,14 +53,14 @@ function Header() {
               to="/bureau"
               className={`px-4 py-2 rounded-lg ${isActive("/bureau")} hover:bg-blue-700 transition-all duration-300`}
             >
-              Bureau
+              Membres du Bureau
             </Link>
-            <Link
+            {/* <Link
               to="/activites"
               className={`px-4 py-2 rounded-lg ${isActive("/activites")} hover:bg-blue-700 transition-all duration-300`}
             >
               Activités
-            </Link>
+            </Link> */}
           </nav>
         </div>
 
@@ -97,7 +98,7 @@ function Header() {
                 Bureau
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="/activites"
                 className={`block px-4 py-3 rounded-lg ${isActive("/activites")} hover:bg-blue-700 transition-all duration-300`}
@@ -105,7 +106,7 @@ function Header() {
               >
                 Activités
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

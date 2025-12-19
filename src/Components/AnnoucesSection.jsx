@@ -1,26 +1,27 @@
-import { Bell, Calendar, Users, Heart } from "lucide-react"
+import { Bell, Calendar, Users, Heart, School } from "lucide-react"
+import { Link } from "react-router-dom"
 
 function AnnouncesSection() {
   const announces = [
     {
       icon: Calendar,
-      title: "Messe Dominicale",
-      description: "Tous les dimanches à 9h à la paroisse Saint-Michel",
-      date: "Chaque dimanche",
+      title: "Messe de rentrée des jeunes",
+      description: "Dimanche 20 Décembre 2025",
+      date: "Dimanche 20 Décembre 2025",
       color: "bg-blue-500",
     },
     {
       icon: Users,
-      title: "Retraite Spirituelle",
+      title: "Pèlerinage décanal ",
       description: "Retraite de 3 jours pour approfondir notre foi ensemble",
-      date: "15-17 Mars 2024",
+      date: " Mars 2026",
       color: "bg-green-500",
     },
     {
-      icon: Heart,
-      title: "Action Caritative",
+      icon: School,
+      title: "Formation et messe des jeunes  ",
       description: "Visite aux malades et distribution de vivres",
-      date: "22 Mars 2024",
+      date: "Dimanche 19 Avril 2026",
       color: "bg-pink-500",
     },
   ]
@@ -54,9 +55,15 @@ function AnnouncesSection() {
                 </div>
                 <h3 className="text-2xl font-bold text-gray-800 mb-3 text-center">{announce.title}</h3>
                 <p className="text-gray-600 mb-4 text-center">{announce.description}</p>
-                <div className="bg-gray-100 rounded-lg px-4 py-2 text-center">
+               <div className="bg-gray-100 rounded-lg px-4 py-3 text-center mb-4">
                   <p className="text-sm font-semibold text-gray-700">📅 {announce.date}</p>
                 </div>
+                <Link
+                  to="/programme"
+                  className="block w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition-all duration-300 text-center"
+                >
+                  Plus d'infos
+                </Link>
               </div>
             ))}
           </div>
