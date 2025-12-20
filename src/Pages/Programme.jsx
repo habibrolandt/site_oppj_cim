@@ -1,4 +1,3 @@
-"use client"
 
 import { Calendar, Plus, Eye } from "lucide-react"
 import { useState } from "react"

@@ -1,4 +1,3 @@
-"use client"
 
 import { Phone, ChevronDown, ChevronUp } from "lucide-react"
 import { useState } from "react"
@@ -16,6 +15,8 @@ import alexA from "../assets/Images/alexA.jpg"
 import innocent from "../assets/Images/innocent.jpg"
 import yedidia from "../assets/Images/yedidia.jpg"
 import broh from "../assets/Images/bro.jpg"
+import karidioula from "../assets/Images/karidioula.jpg"
+import isaac from "../assets/Images/isaac.jpg"
 
 function Bureau() {
   const [expandedMembre, setExpandedMembre] = useState(null)
@@ -56,7 +57,7 @@ function Bureau() {
           nom: "KARIDIOULA",
           prenom: "ISSOUF",
           poste: "3ème Vice-Président en charge de la formation et de l'insertion socio-professionnelle",
-          photo: null,
+          photo: karidioula,
           phone: "+225 07 47 82 89 24",
         },
       ],
@@ -121,7 +122,7 @@ function Bureau() {
           nom: "KOUASSI",
           prenom: "ISAAC N’GUESSAN",
           poste: "Secrétaire à l’organisation Adjoint 1",
-          photo: null,
+          photo: isaac,
           phone: "+225 07 57 70 34 32",
         },
         {

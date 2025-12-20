@@ -26,7 +26,7 @@ function Header() {
             />
             <div>
               <h1 className="text-lg md:text-xl font-bold">OPPJ-CIM</h1>
-              <p className="text-xs text-blue-100 hidden md:block">Office Paroissial des Jeunes</p>
+              <p className="text-xs text-blue-100 hidden md:block">Office Paroissial de la Pastorale des Jeunes</p>
             </div>
           </div>
 
