@@ -2,6 +2,7 @@
 import { Calendar, Plus, Eye } from "lucide-react"
 import { useState } from "react"
 import affiche1 from "../assets/Images/MesseRentrée.png"
+import affiche2 from "../assets/Images/affiche pele.png"
 
 function Programme() {
   const [selectedMonth, setSelectedMonth] = useState("all")
@@ -26,7 +27,7 @@ function Programme() {
       monthValue: "Décembre",
       description: "",
       time: "08h00",
-      affiches: ["/affiche-retraite-careme.jpg"],
+      affiches: [],
     },
     {
       id: 3,
@@ -36,7 +37,7 @@ function Programme() {
       monthValue: "Mars",
       description: "",
       time: "08h00",
-      affiches: [],
+      affiches: [affiche2],
     },
     {
       id: 4,
